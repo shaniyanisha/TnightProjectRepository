@@ -88,25 +88,16 @@ class MainVC: UIViewController {
      //IBAction for signInButtonTapped
      @IBAction func signInButtonTapped(_ sender: UIButton) {
             
-            let signInController = self.storyboard?.instantiateViewController(withIdentifier: "SignInVCID") as! SignInVC
-            
-            signInController.view.frame = self.screenScrollView.bounds
-            self.addChildViewController(signInController)
-            
-            self.screenScrollView.addSubview(signInController.view)
-            signInController.didMove(toParentViewController: self)
+        self.screenScrollView.setContentOffset(CGPoint(x : 0 , y:0), animated: true)
+        
+        
+        
      }
         
     //IBAction for signUpButtonTapped
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
             
-            let signUpController = self.storyboard?.instantiateViewController(withIdentifier: "SignUpVCID") as! SignUpVC
-            signUpController.view.frame = self.screenScrollView.bounds
-            self.addChildViewController(signUpController)
-            self.screenScrollView.addSubview(signUpController.view)
-            signUpController.didMove(toParentViewController: self)
-        
-            
+        self.screenScrollView.setContentOffset(CGPoint(x: self.screenScrollView.frame.width, y: 0), animated: true)
         
             
      }
