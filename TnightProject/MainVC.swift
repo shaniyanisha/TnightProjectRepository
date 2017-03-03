@@ -105,6 +105,9 @@ class MainVC: UIViewController {
             self.addChildViewController(signUpController)
             self.screenScrollView.addSubview(signUpController.view)
             signUpController.didMove(toParentViewController: self)
+        
+            
+        
             
      }
     

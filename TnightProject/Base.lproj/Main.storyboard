@@ -317,6 +317,9 @@
                                                 <state key="normal" title="Sign Up">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signUpButton:" destination="dCR-W1-rrv" eventType="touchUpInside" id="0sA-CX-GUC"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="8JF-Ck-wUM">
                                                 <rect key="frame" x="0.0" y="72.5" width="280" height="22.5"/>
@@ -355,6 +358,14 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="325"/>
+                    <connections>
+                        <outlet property="LogInButton" destination="dtw-Xk-3go" id="PgR-44-Js9"/>
+                        <outlet property="signUpButton" destination="i6j-d6-MF3" id="BMy-SC-8CM"/>
+                        <outlet property="userEmail" destination="LzE-wD-XMj" id="HqV-wy-CBk"/>
+                        <outlet property="userName" destination="ayB-D8-TQZ" id="Fz2-Hh-cna"/>
+                        <outlet property="userPassword" destination="hXU-Lq-Uaw" id="yaG-Cx-gly"/>
+                        <outlet property="userPhoneNumber" destination="RT4-On-4bi" id="8D8-RE-qRQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SoD-xu-3E0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
