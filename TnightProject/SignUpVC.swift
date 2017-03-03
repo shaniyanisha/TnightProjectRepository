@@ -1,10 +1,7 @@
 //
 //  SignUpVC.swift
 //  TnightProject
-//
-//  Created by Rajat Dhasmana on 02/03/17.
 //  Copyright © 2017 appinventiv. All rights reserved.
-//
 
 import UIKit
 
